@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+    --font-display: "Marcellus", Georgia, serif;
+    --font-sans: "Lato", system-ui, sans-serif;
+
+    --color-ink: #07100d;
+    --color-pine: #0c1a15;
+    --color-mint: #5fe0b0;
+    --color-paper: #eef3f1;
+}
+
+@layer base {
+    :focus-visible {
+        outline: 3px solid var(--color-mint);
+        outline-offset: 3px;
+    }
+
+    dialog[open] {
+        animation: pop 0.3s cubic-bezier(0.2, 1.1, 0.3, 1) both;
+    }
+}
+
+@keyframes pop {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
