@@ -22,8 +22,6 @@
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -42,7 +40,6 @@
     --leading-relaxed: 1.625;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
-    --blur-xs: 4px;
     --blur-sm: 8px;
     --aspect-video: 16 / 9;
     --default-transition-duration: 150ms;
@@ -310,9 +307,6 @@
   .hidden {
     display: none;
   }
-  .inline-block {
-    display: inline-block;
-  }
   .inline-flex {
     display: inline-flex;
   }
@@ -442,9 +436,6 @@
   .overflow-x-auto {
     overflow-x: auto;
   }
-  .scroll-smooth {
-    scroll-behavior: smooth;
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -573,12 +564,6 @@
   .px-2\.5 {
     padding-inline: calc(var(--spacing) * 2.5);
   }
-  .px-3 {
-    padding-inline: calc(var(--spacing) * 3);
-  }
-  .px-3\.5 {
-    padding-inline: calc(var(--spacing) * 3.5);
-  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -611,9 +596,6 @@
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
-  }
-  .py-12 {
-    padding-block: calc(var(--spacing) * 12);
   }
   .py-14 {
     padding-block: calc(var(--spacing) * 14);
@@ -807,11 +789,6 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .transition-transform {
-    transition-property: transform, translate, scale, rotate;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
@@ -910,9 +887,6 @@
     }
     .sm\:px-8 {
       padding-inline: calc(var(--spacing) * 8);
-    }
-    .sm\:px-10 {
-      padding-inline: calc(var(--spacing) * 10);
     }
     .sm\:py-20 {
       padding-block: calc(var(--spacing) * 20);
